@@ -2,16 +2,33 @@
     position: relative;
     z-index: 9999;
 }
+
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
-    background-color: #fff;
-    border: none;
+  transition: all 1s ease-in-out;
+  background-color: #fff;
+  border: none;
+}
+.navbar>.container{
+    position: fixed;
+    display: block;
+    width: 100%;
+}
+.navbar-header{
+height: 100%;
 }
 
+
+
 nav.navbar.bootsnav {
+  /* margin-top: 15px;
+  margin-bottom: 5px; */
+  /* padding: 10px; */
     background-color: #fff;
-    border-bottom: transparent;
-    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+    border-bottom: none;
+    /* box-shadow: none; */
+    background-color: lavenderblush;
+    /* box-shadow: 0 3px 15px rgba(0,0,0,.2); */
 }
 
 
@@ -26,8 +43,10 @@ nav.navbar.bootsnav {
     cursor: pointer;
 }
 .nav li a:hover{
-    color: red;
     text-decoration: underline;
+    background-color: #d92cf9;
+
+
 }
 
 
@@ -52,8 +71,32 @@ nav.navbar.bootsnav ul.nav > li > a {
     -o-transition: 0.3s linear;
     transition: 0.3s linear;
 }
-
-
-
-
-
+/* Adjust the breakpoint as needed for your design */
+@media (max-width: 768px) {
+    .navbar-header {
+      display: block;
+    }
+    .navbar-brand {
+      text-align: center;
+      padding: 10px 0;
+    }
+    .navbar-toggle {
+      display: block;
+      float: none;
+    }
+    .navbar-collapse {
+      text-align: center;
+    }
+    .nav.navbar-nav {
+      display: inline-block;
+      float: none;
+    }
+    .nav li {
+      display: block;
+      margin: 10px 0; /* Adjust the spacing as needed */
+    }
+    .nav li a {
+      font-size: 16px;
+    }
+  }
+  

@@ -82,3 +82,46 @@
 }
 
 .experience-time-responsive{display: none;}
+
+/* Common styles for both large and small screens */
+.education-horizontal-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-horizontal-timeline {
+    margin-bottom: 20px;
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .single-horizontal-timeline {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-time-responsive {
+        display: none;
+    }
+    
+    /* Adjust the styles for small screens here */
+}
+
+/* Styles for Education Horizontal Timeline (Assuming it's for a different section) */
+.education-horizontal-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-horizontal-timeline {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .single-horizontal-timeline {
+        text-align: center;
+    }
+}

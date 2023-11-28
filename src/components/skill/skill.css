@@ -65,3 +65,15 @@
    transform: translateX(-50%);
    margin-left: 0;
 }
+
+/* Common styles for both large and small screens */
+.single-skill-content {
+    text-align: center;
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .single-skill-content {
+        margin-bottom: 20px;
+    }
+}

@@ -19,7 +19,7 @@ const Navbar = () => {
                 <li className='smooth-menu'><a href="#education">Education</a></li>
                 <li className="smooth-menu"><a href="#skills">Skills</a></li>
                 <li className="smooth-menu"><a href="#experience">Experience</a></li>
-                <li className="smooth-menu"><a href="#profiles">Projects</a></li>
+                {/* <li className="smooth-menu"><a href="#profiles">Projects</a></li> */}
                 <li className="smooth-menu"><a href="#contact">Contact</a></li>
               </ul>
             </div>

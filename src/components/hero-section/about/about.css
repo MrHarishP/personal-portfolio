@@ -84,3 +84,16 @@
 .about-list-icon ul li a i {
     margin-left: 6px;
 }
+@media (max-width: 768px) {
+    .about-content {
+        padding: 20px;
+    }
+
+    .single-about-img {
+        margin-top: 20px;
+    }
+
+    .single-about-add-info {
+        margin-top: 20px;
+    }
+}
