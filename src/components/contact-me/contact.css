@@ -7,6 +7,10 @@
     margin-bottom: 20px;
     
 }
+
+.contact-adress h3  {
+text-transform: uppercase;
+}
 .contact-form .form-control {
     padding: 25px;
     font-size: 14px;
@@ -91,9 +95,9 @@
 /*.contact-add-info */
 
 /*hm-foot-icon*/
-.hm-foot-icon {
+/* .hm-foot-icon {
    
-}
+} */
 .hm-foot-icon ul li{float:left;}
 .hm-foot-icon ul li>a {
     color: #636a82;
