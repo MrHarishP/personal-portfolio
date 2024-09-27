@@ -11,7 +11,7 @@ const Hero_section = () => {
 						<div className="header-text">
 							<h2>hi <span>,</span> i am <br/>harish<br/> pandey <span>.</span> </h2>
 							<p>ui/ux designer and web developer</p>
-							<a href="/src/components/hero-section/Harish pandey resume.pdf" download>download resume</a>
+							<a href="\Harish Pandey.pdf" download="Harish pandey.pdf">download resume</a>
 						</div>
 					</div>
 				</div>
