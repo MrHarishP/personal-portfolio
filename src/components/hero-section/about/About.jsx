@@ -16,7 +16,14 @@ const About = () => {
 						<div className="col-sm-6">
 							<div className="single-about-txt">
 								<h3>
-								Dedicated UI/UX Designer with a strong academic foundation from Shri Vishwakarma Skill University, Haryana, and a current pursuit of an MBA in Business Analytics. Passionate about creating user-centric digital experiences and leveraging data-driven insights for informed design decisions..
+								Dedicated Business and Data Analyst with a strong academic foundation from
+								 Shri Vishwakarma Skill University, Haryana, and currently pursuing an MBA in
+								  Business Analytics. Skilled in analyzing business needs, identifying process 
+								  improvements, and leveraging data-driven insights to uncover trends, optimize processes, 
+								  and support strategic decision-making. Passionate about using data analysis and visualization 
+								  to drive informed business decisions and enhance operational efficiency.
+
+
 								</h3>
 								<p>
 									<li>
@@ -45,12 +52,12 @@ const About = () => {
 											<p>mrharish.work@gmail.com</p>
 										</div>
 									</div>
-									<div className="col-sm-4">
+									{/* <div className="col-sm-4">
 										<div className="single-about-add-info">
 											<h3>website</h3>
 											<p>www.brownsine.com</p>
 										</div>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>
@@ -66,18 +73,18 @@ const About = () => {
 										</li>
 										
 										<li>
-											<a href="/">
+											<a href="https://github.com/MrHarishP">
 												<i  className="fa fa-github" aria-hidden="true"></i>
 											</a>
 											
 										</li>
 										<li>
-											<a href="/">
+											<a href="https://www.linkedin.com/in/harishpandey990/">
 												<i  className="fa fa-linkedin" aria-hidden="true"></i>
 											</a>
 										</li>
 										<li>
-											<a href="/">
+											<a href="https://www.instagram.com/urz_pandey/">
 												<i  className="fa fa-instagram" aria-hidden="true"></i>
 											</a>
 										</li>

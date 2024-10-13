@@ -1,102 +1,139 @@
+/* General Styles */
 .top-area {
-    position: relative;
-    z-index: 9999;
+  position: relative;
+  z-index: 9999;
 }
 
-@media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
   transition: all 1s ease-in-out;
   background-color: #fff;
   border: none;
 }
-.navbar>.container{
-    position: fixed;
-    display: block;
-    width: 100%;
-}
-.navbar-header{
-height: 100%;
+
+.navbar > .container {
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0; /* Fix navbar to the top */
+  z-index: 9999; /* Ensure it's always on top */
 }
 
-
+.navbar-header {
+  height: 100%;
+}
 
 nav.navbar.bootsnav {
-  /* margin-top: 15px;
-  margin-bottom: 5px; */
-  /* padding: 10px; */
-    background-color: #fff;
-    border-bottom: none;
-    /* box-shadow: none; */
-    background-color: lavenderblush;
-    /* box-shadow: 0 3px 15px rgba(0,0,0,.2); */
+  background-color: lavenderblush;
+  border-bottom: none;
 }
 
-
+/* Navbar Brand */
 .navbar-header a.navbar-brand,
-.navbar-header{
-    display: inline-block;
-    color: #d92cf9;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 10px 0px; /* Adjust padding as needed */
-    text-transform: uppercase;
-    cursor: pointer;
-}
-.nav li a:hover{
-    text-decoration: underline;
-    background-color: #d92cf9;
-
-
+.navbar-header {
+  display: inline-block;
+  color: #d92cf9;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-
-/* Remove the flex display and align-items properties */
-nav.navbar.bootsnav ul.nav {
-    display: block;
-    text-align: center; /* Center-align the items */
+/* Nav Links Hover Effect */
+.nav li a:hover {
+  text-decoration: underline;
+  background-color: #d92cf9;
+  color: #fff;
 }
 
-nav.navbar.bootsnav ul.nav > li {
-    display: inline; /* Make list items display inline */
-    margin: 0 10px; /* Add some margin for spacing between items */
-}
-
-nav.navbar.bootsnav ul.nav > li > a {
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    -webkit-transition: 0.3s linear;
-    -moz-transition: 0.3s linear;
-    -ms-transition: 0.3s linear;
-    -o-transition: 0.3s linear;
-    transition: 0.3s linear;
-}
-/* Adjust the breakpoint as needed for your design */
-@media (max-width: 768px) {
-    .navbar-header {
+/* Desktop View (min-width: 1024px) */
+@media (min-width: 1024px) {
+  nav.navbar.bootsnav ul.nav {
       display: block;
-    }
-    .navbar-brand {
+      text-align: center;
+  }
+
+  nav.navbar.bootsnav ul.nav > li {
+      display: inline-block;
+      margin: 0 10px;
+  }
+
+  nav.navbar.bootsnav ul.nav > li > a {
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      transition: 0.3s linear;
+  }
+}
+
+/* Tablet and Medium Devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .navbar-header {
+      text-align: center;
+  }
+
+  .navbar-collapse {
+      text-align: center;
+  }
+
+  .navbar-nav {
+      float: none;
+      margin: 0;
+      text-align: center;
+  }
+
+  .navbar-header a.navbar-brand {
+      padding: 15px 0;
+  }
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar-header {
+      display: block;
+  }
+
+  .navbar-brand {
       text-align: center;
       padding: 10px 0;
-    }
-    .navbar-toggle {
+  }
+
+  .navbar-toggle {
       display: block;
       float: none;
-    }
-    .navbar-collapse {
+  }
+
+  .navbar-collapse {
       text-align: center;
-    }
-    .nav.navbar-nav {
+  }
+
+  .nav.navbar-nav {
       display: inline-block;
       float: none;
-    }
-    .nav li {
+      margin: 0;
+  }
+
+  .nav li {
       display: block;
       margin: 10px 0; /* Adjust the spacing as needed */
-    }
-    .nav li a {
-      font-size: 16px;
-    }
   }
-  
+
+  .nav li a {
+      font-size: 16px;
+  }
+}
+
+/* Small Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  nav.navbar.bootsnav ul.nav > li > a {
+      font-size: 14px;
+  }
+
+  .nav li {
+      margin: 8px 0; /* Reduced margin for small screens */
+  }
+
+  .navbar-brand {
+      font-size: 18px; /* Smaller brand size for small screens */
+  }
+}

@@ -1,12 +1,26 @@
+.cursor {
+    display: inline-block;
+    border-left: 2px solid #d92cf9;
+    animation: blink 0.7s steps(1) infinite;
+    /* color: #d92cf9; */
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+      
+    }
+  }
+
 .welcome-hero{
     display: flex;
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../hero-section/image/IMG_20220319_175916.jpg)no-repeat;
+    background:url(../../../public/assets/images/about/welcome-banner.jpg)no-repeat;
     background-size:cover;
     background-position: center;
-    height:px;
+    height:600px;
 }
 .welcome-hero:before{
     position:absolute;
@@ -28,9 +42,9 @@
 }
 .header-text h2 span {color: #d92cf9;}
 .header-text p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
+    /* color: #d92cf9; */
+    font-size: 50px;
+    font-weight: 500;
     text-transform: uppercase;
     margin: 30px 0 60px;
     letter-spacing: 1px;
@@ -39,7 +53,6 @@
     width: 200px;
     height: 60px;
     line-height: 60px;
-    font-size: 25px;
     border-radius: 3px;
     text-transform: capitalize;
     color: #fff;
@@ -53,25 +66,43 @@
     transition: 0.3s linear;
 }
 .header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
-/*.header-text-area*/
-
-@media (max-width: 768px) {
+/* Responsive adjustments for smaller devices */
+@media only screen and (max-width: 768px) {
     .welcome-hero {
-        height: 400px; /* Adjust the height for small screens */
+        height: 70vh; /* Adjusted height for medium screens */
     }
-
+    
     .header-text h2 {
-        font-size: 36px; /* Adjust font size for smaller screens */
+        font-size: 6vw; /* Adjust font size for tablets */
     }
 
     .header-text p {
-        font-size: 16px; /* Adjust font size for smaller screens */
-        margin: 20px 0 40px; /* Adjust margins for smaller screens */
+        font-size: 3vw;
     }
 
     .header-text a {
-        width: 160px; /* Adjust button size for smaller screens */
-        height: 50px; /* Adjust button size for smaller screens */
-        font-size: 20px; /* Adjust font size for smaller screens */
+        width: 160px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .welcome-hero {
+        height: 60vh; /* Adjusted height for smaller screens */
+    }
+
+    .header-text h2 {
+        font-size: 7vw; /* Smaller font size for mobile devices */
+    }
+
+    .header-text p {
+        font-size: 4vw;
+    }
+
+    .header-text a {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
     }
 }

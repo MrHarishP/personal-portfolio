@@ -1,138 +1,56 @@
-import React from 'react'
-import './project.css'
+import React from 'react';
+import './project.css';
+import image from '../hero-section/image/employee_attrition.png';
 
-const project = () => {
+const Project = () => {
+  const projects = [
+    {
+      title: "Power BI ",
+      description: "A brief description of project 1",
+      imgSrc: image,
+      url: "https://app.powerbi.com/groups/me/dashboards/082392e4-8bf6-4595-a95e-e9ce60f7e59c",
+    },
+    {
+      title: "Python ",
+      description: "A brief description of project 2",
+      imgSrc: image,
+      url: "https://project2.com",
+    },
+    {
+      title: "Machine learning",
+      description: "A brief description of project 3",
+      imgSrc: image,
+      url: "https://project3.com",
+    },
+    {
+      title: "Excel",
+      description: "A brief description of project 4",
+      imgSrc: image,
+      url: "https://project4.com",
+    },
+  ];
+
   return (
-<section id="profiles" className="profiles">
-			<div className="profiles-details">
-				<div className="section-heading text-center">
-					<h2>profiles</h2>
-				</div>
-				<div className="container">
-					<div className="profiles-content">
-						<div className="row">
-							<div className="col-sm-3">
-								<div className="single-profile">
-									<div className="profile-txt">
-										<a href="/"><i className="flaticon-themeforest"></i></a>
-										<div className="profile-icon-name">themeforest</div>
-									</div>
-									<div className="single-profile-overlay">
-										<div className="profile-txt">
-											<a href="/"><i className="flaticon-themeforest"></i></a>
-											<div className="profile-icon-name">themeforest</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-sm-3">
-								<div className="single-profile">
-									<div className="profile-txt">
-										<a href="/"><i className="flaticon-dribbble"></i></a>
-										<div className="profile-icon-name">dribbble</div>
-									</div>
-									<div className="single-profile-overlay">
-										<div className="profile-txt">
-											<a href="/"><i className="flaticon-dribbble"></i></a>
-											<div className="profile-icon-name">dribbble</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-sm-3">
-								<div className="single-profile">
-									<div className="profile-txt">
-										<a href="/"><i className="flaticon-behance-logo"></i></a>
-										<div className="profile-icon-name">behance</div>
-									</div>
-									<div className="single-profile-overlay">
-										<div className="profile-txt">
-											<a href="/"><i className="flaticon-behance-logo"></i></a>
-											<div className="profile-icon-name">behance</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-sm-3">
-								<div className="single-profile profile-no-border">
-									<div className="profile-txt">
-										<a href="/"><i className="flaticon-github-logo"></i></a>
-										<div className="profile-icon-name">github</div>
-									</div>
-									<div className="single-profile-overlay">
-										<div className="profile-txt">
-											<a href="/"><i className="flaticon-github-logo"></i></a>
-											<div className="profile-icon-name">github</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="profile-border"></div>
-						<div className="row">
-							<div className="col-sm-3">
-								<div className="single-profile">
-									<div className="profile-txt">
-										<a href="/"><i className="flaticon-flickr-website-logo-silhouette"></i></a>
-										<div className="profile-icon-name">flickR</div>
-									</div>
-									<div className="single-profile-overlay">
-										<div className="profile-txt">
-											<a href="/"><i className="flaticon-flickr-website-logo-silhouette"></i></a>
-											<div className="profile-icon-name">flickR</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-sm-3">
-								<div className="single-profile">
-									<div className="profile-txt">
-										<a href="/"><i className="flaticon-smug"></i></a>
-										<div className="profile-icon-name">smungMung</div>
-									</div>
-									<div className="single-profile-overlay">
-										<div className="profile-txt">
-											<a href="/"><i className="flaticon-smug"></i></a>
-											<div className="profile-icon-name">smungMung</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-sm-3">
-								<div className="single-profile">
-									<div className="profile-txt">
-										<a href="/"><i className="flaticon-squarespace-logo"></i></a>
-										<div className="profile-icon-name">squareSpace</div>
-									</div>
-									<div className="single-profile-overlay">
-										<div className="profile-txt">
-											<a href="/"><i className="flaticon-squarespace-logo"></i></a>
-											<div className="profile-icon-name">squareSpace</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-sm-3">
-								<div className="single-profile profile-no-border">
-									<div className="profile-txt">
-										<a href="/"><i className="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
-										<div className="profile-icon-name">bitBucket</div>
-									</div>
-									<div className="single-profile-overlay">
-										<div className="profile-txt">
-											<a href="/"><i className="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
-											<div className="profile-icon-name">bitBucket</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    <div className="project-section">
+      <h2 className="section-title">Our Projects</h2>
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          className={`project-item ${index % 2 === 0 ? 'text-left' : 'text-right'}`}
+        >
+          <div className="project-content">
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <h3 className="project-title">{project.title}</h3>
+            </a>
+            <p className="project-description">{project.description}</p>
+          </div>
+          <div className="project-image-container">
+            <img src={project.imgSrc} alt={project.title} className="project-image" />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-		</section>
-  )
-}
-
-export default project
+export default Project;

@@ -55,7 +55,7 @@ const contact = () => {
 								<div className="contact-adress">
 									<div className="contact-add-head">
 										<h3>harish pandey</h3>
-										<p>uI/uX designer</p>
+										<p>web Developer, Data and Business analyst </p>
 									</div>
 									<div className="contact-add-info">
 										<div className="single-contact-add-info">

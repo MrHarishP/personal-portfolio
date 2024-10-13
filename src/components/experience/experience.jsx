@@ -16,8 +16,8 @@ const experience = () => {
 											<div className="col-md-5">
 												<div className="experience-time text-right">
 													<h2>2023</h2>
-													<h3>frontend developer </h3>
-													<h4>ui/ux designer</h4>
+													<h3>Data Analyst <span>And</span>  Business Analyst</h3>
+													{/* <h4>Python  Power BI <span>,</span></h4> */}
 												</div>
 											</div>
 											<div className="col-md-offset-1 col-md-5">
@@ -25,10 +25,17 @@ const experience = () => {
 													<div className="timeline-content">
 														<h4 className="title">
 															<span><i className="fa fa-circle" aria-hidden="true"></i></span>
-															fresher
+														Inxpress
 														</h4>
+														<h5>Gurgaon Haryana</h5>
 														<p className="description">
-														ill write something on it .it just for remainder
+															<ul>
+														<li>Analyze complex datasets to identify trends, patterns, and anomalies.</li>
+														<li>Create visualizations and reports to present data-driven insights.</li>
+														<li>Collaborate with cross-functional teams to define metrics and KPIs.</li>
+														<li>Clean and preprocess data to ensure accuracy and consistency.</li>
+														<li>Utilize statistical methods and machine learning techniques to enhance data analysis.</li>
+															</ul>
 														</p>
 													</div>
 												</div>
@@ -85,7 +92,8 @@ const experience = () => {
 														<h5>Manesar , Haryana</h5>
 														<p className="description">
 														Operated CNC bending machines to fabricate complex components for Honda, adhering to strict quality and precision standards.
-Demonstrated expertise in the setup, programming, and operation of CNC equipment, ensuring the accurate production of parts.														</p>
+														Demonstrated expertise in the setup, programming, and operation of CNC equipment, ensuring the accurate production of parts.		
+														</p>
 													</div>
 												</div>
 											</div>

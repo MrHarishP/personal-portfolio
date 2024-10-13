@@ -9,6 +9,18 @@ const cssstyle={
 const javascriptsytle ={
     width:"70%"
 }
+const Excel ={
+    width:"95%"
+}
+const Python ={
+    width:"85%"
+}
+const powerBI ={
+    width:"95%"
+}
+const mysql = {
+	width : "80%"
+}
 const skill = () => {
   return (
     <section id="skills" className="skills">
@@ -64,6 +76,18 @@ const skill = () => {
 											<h3>90%</h3>	
 										</div>
 									</div>
+									<div className="barWrapper">
+										<span className="progressText">Advance Excel</span>
+										<div className="single-progress-txt">
+											<div className="progress ">
+											   <div className="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="10" aria-valuemax="100" style={Excel} >
+												    
+											   </div>
+											</div>
+											<h3>95%</h3>	
+										</div>
+									</div>
+									
 								</div>
 							</div>
 							<div className="col-md-6">
@@ -88,6 +112,39 @@ const skill = () => {
 											   </div>
 											</div>
 											<h3>85%</h3>	
+										</div>
+									</div>
+									<div className="barWrapper">
+										<span className="progressText">Python</span>
+										<div className="single-progress-txt">
+											<div className="progress ">
+											   <div className="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style={Python} >
+												    
+											   </div>
+											</div>
+											<h3>85%</h3>	
+										</div>
+									</div>
+									<div className="barWrapper">
+										<span className="progressText">Power BI</span>
+										<div className="single-progress-txt">
+											<div className="progress ">
+											   <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style={powerBI} >
+												    
+											   </div>
+											</div>
+											<h3>95%</h3>	
+										</div>
+									</div>
+									<div className="barWrapper">
+										<span className="progressText">Mysql</span>
+										<div className="single-progress-txt">
+											<div className="progress ">
+											   <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style={mysql} >
+												    
+											   </div>
+											</div>
+											<h3>80%</h3>	
 										</div>
 									</div>
 								</div>
